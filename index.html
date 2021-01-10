@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Watched Films List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <div class="center-contents">
+    <h1>Watched Films List</h1>
+    <form>
+      <div class="form-element">
+        <label for="name">Film</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div class="form-element">
+        <label for="last-name">Director</label>
+        <input type="text" id="director" />
+      </div>
+      <div class="form-element">
+        <legend>Rating (out of 5)</legend>
+        <fieldset>
+          <label for="one">1</label>
+          <input type="radio" name="rating" id="one" value="1/5"/>
+
+          <label for="two">2</label>
+          <input type="radio" name="rating" id="two" value="2/5"/>
+
+          <label for="three">3</label>
+          <input type="radio" name="rating" id="three" value="3/5"/>
+
+          <label for="four">4</label>
+          <input type="radio" name="rating" id="four" value="4/5"/>
+
+          <label for="five">5</label>
+          <input type="radio" name="rating" id="five" value="5/5"/>
+        </fieldset>
+      </div>
+
+      <div class="form-element">
+        <input type="submit" value="Add to List" />
+                <button id="delete-all">Delete All</button>
+
+      </div>
+    </form>
+
+
+    <ul id="list">
+    </ul>
+  </div>
+</body>
+</html>
